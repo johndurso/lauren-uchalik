@@ -30,7 +30,7 @@ export default function AnimatedHeading() {
   }, []);
 
   return (
-    <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-text mb-3 leading-tight">
+    <h1 id="travel-hero-heading" className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-text mb-3 leading-tight" aria-labelledby="travel-hero-heading">
       Let&apos;s Plan Your{" "}
       <span
         className="text-transparent text-4xl sm:text-5xl md:text-6xl bg-clip-text bg-gradient-to-r from-peach to-rosewater block p-5 transition-all duration-400 ease-in-out"
