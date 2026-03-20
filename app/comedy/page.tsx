@@ -71,25 +71,44 @@ export default function ComedyPage() {
       <section className="bg-gradient-to-br from-crust via-base to-mantle py-24 px-6 text-center relative overflow-hidden">
         <div className="absolute top-0 right-1/3 w-80 h-80 bg-mauve opacity-10 rounded-full blur-3xl pointer-events-none" />
         <div className="relative max-w-3xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-extrabold text-text mb-6">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-text mb-6">
             The{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-mauve to-pink">
               Comedy
             </span>{" "}
             Page
           </h1>
-          <p className="text-subtext1 text-lg max-w-xl mx-auto leading-relaxed">
+          <p className="text-subtext1 text-normal sm:text-lg max-w-xl mx-auto leading-relaxed mb-10">
             Lauren Uchalik is a Detroit-based stand-up comedian who has been making Michigan laugh for years.
           </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="mailto:laurenuchalik@gmail.com"
+              title="Lauren's email for booking stand-up comedy"
+              rel="noopener noreferrer"
+              className="inline-flex mt-5 sm:mt-0 m-auto items-center gap-2 justify-center bg-mauve text-crust font-bold px-8 py-3 rounded-xl hover:bg-pink transition-colors text-lg shadow-lg shadow-teal/20"
+            >
+              <IconMail className="w-5 h-5" />
+              Book Lauren
+            </a>
+            <a
+              href="#clips"
+              rel="noopener noreferrer"
+              title="Link to stand-up clips section"
+              className="inline-flex mt-5 sm:mt-0 m-auto items-center gap-2 justify-center text-mauve font-semibold px-8 py-3 rounded-xl border border-mauve hover:border-pink hover:text-pink transition-colors text-lg"
+            >
+              View Stand-Up Clips
+            </a>
+          </div>
         </div>
       </section>
 
       {/* ── VIDEOS ── */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
-        <h2 className="text-3xl font-bold text-text mb-2">Watch Lauren</h2>
+      <section id="clips" className="max-w-6xl mx-auto px-6 py-20">
+        <h2 className="text-3xl font-bold text-text mb-2">Stand-up Clips of Lauren</h2>
         <p className="text-subtext1 mb-10">Stand-up sets from Lauren&apos;s YouTube channel.</p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-col-1 md:grid-cols-3 gap-8">
           {videos.map((video) => (
             <div
               key={video.id}
@@ -132,12 +151,13 @@ export default function ComedyPage() {
         <div className="max-w-4xl mx-auto text-center">
           <IconBuilding className="w-12 h-12 mx-auto mb-4 text-peach" />
           <h2 className="text-3xl font-bold text-peach mb-4">Motor City Comedy Festival</h2>
-          <p className="text-subtext1 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
+          <p className="text-subtext1 text-[0.9rem] sm:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
             Lauren is the founder and former board member of the Motor City Comedy Festival, Detroit&apos;s
             premier stand-up comedy festival.
           </p>
           <Link
             href="https://motorcitycomedyfestival.com"
+            target="_blank"
             className="inline-flex items-center gap-2 bg-surface0 border border-surface1 text-peach transition-colors font-bold px-8 py-3 rounded-xl hover:border-peach transition-colors"
           >
             View festival website
@@ -149,8 +169,8 @@ export default function ComedyPage() {
       {/* ── CTA ── */}
       <section className="max-w-4xl mx-auto px-6 pb-15 text-center">
         <div className="bg-surface0 border border-surface1 rounded-2xl p-10">
-          <h3 className="text-2xl font-bold text-mauve mb-3">Looking for a comedian for your event?</h3>
-          <p className="text-subtext1 mb-6">
+          <h3 className="text-lg sm:text-2xl font-bold text-mauve mb-3">Looking for a comedian for your event?</h3>
+          <p className="text-sm sm:text-[1rem] text-subtext1 mb-6">
             Reach out to book Lauren for your next show, corporate event, or private party.
           </p>
           <Link

@@ -74,20 +74,20 @@ export default function HomePage() {
             </span>
             !
           </h1>
-          <p className="text-subtext1 text-lg md:text-xl max-w-xl mx-auto mb-10 leading-relaxed">
+          <p className="text-subtext1 text-[1rem] sm:text-lg md:text-xl max-w-xl mx-auto mb-10 leading-relaxed">
             At the very least, I can make you smile, and maybe book your next dream vacation while I&apos;m at it.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/comedy"
-              className="inline-flex items-center gap-2 bg-mauve text-crust font-bold px-8 py-3 rounded-xl hover:bg-pink transition-colors text-lg shadow-lg shadow-mauve/20"
+              className="inline-flex mt-5 sm:mt-0 m-auto min-w-[225px] items-center gap-2 bg-mauve text-crust font-bold px-8 py-3 rounded-xl hover:bg-pink transition-colors text-lg shadow-lg shadow-mauve/20"
             >
               <IconMic className="w-5 h-5" />
               See My Comedy
             </Link>
             <Link
               href="/travel"
-              className="inline-flex items-center gap-2 bg-teal text-crust font-bold px-8 py-3 rounded-xl hover:bg-sky transition-colors text-lg shadow-lg shadow-teal/20"
+              className="inline-flex mt-5 sm:mt-0 m-auto mt-10min-w-[225px] items-center gap-2 bg-teal text-crust font-bold px-8 py-3 rounded-xl hover:bg-sky transition-colors text-lg shadow-lg shadow-teal/20"
             >
               <IconBriefcase className="w-5 h-5" />
               Plan Your Trip
@@ -155,19 +155,19 @@ export default function HomePage() {
               the best deals, and expert guidance every step of the way.
             </p>
           </div>
-          <div className="flex flex-col sm:flex-row gap-3">
+          <div className="flex flex-row gap-3">
             <a
               href="https://app.tern.travel/public/forms/w_NEn_ZKXEve3Ricj8Z0VA/responses/new"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-teal text-crust font-semibold px-6 py-2 rounded-lg hover:bg-sky transition-colors text-center"
+              className="inline-flex m-auto items-center gap-2 bg-teal text-crust font-semibold px-6 py-2 rounded-lg hover:bg-sky transition-colors text-center"
             >
               Book with Lauren
               <IconArrowRight className="w-5 h-5" />
             </a>
             <Link
               href="/travel"
-              className="inline-flex items-center gap-2 bg-surface0 text-teal font-semibold px-6 py-2 rounded-lg hover:bg-teal hover:text-crust transition-colors text-center"
+              className="inline-flex m-auto items-center gap-2 bg-surface0 text-teal font-semibold px-6 py-2 rounded-lg hover:bg-teal hover:text-crust transition-colors text-center"
             >
               Learn More
               <IconArrowRight className="w-5 h-5" />
@@ -184,11 +184,11 @@ export default function HomePage() {
             <IconMicSmall className="w-4 h-4" />
             Podcasts
           </span>
-          <h2 className="text-3xl font-bold text-text mt-2 mb-4">Unofficial Universal Orlando Podcast</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-text mt-2 mb-4">Unofficial Universal Orlando Podcast</h2>
           <p className="text-subtext1 mb-8">
             Lauren has appeared on the Unofficial Universal Orlando Podcast. Catch her episodes on Apple Podcasts.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-row gap-4 justify-center">
             <a
               href="https://podcasts.apple.com/us/podcast/unofficial-universal-orlando-podcast/id431258512?i=1000677520558"
               target="_blank"

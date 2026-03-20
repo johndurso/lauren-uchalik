@@ -207,7 +207,7 @@ export default function TravelPage() {
               href="https://app.tern.travel/public/forms/w_NEn_ZKXEve3Ricj8Z0VA/responses/new"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 justify-center bg-teal text-crust font-bold px-8 py-3 rounded-xl hover:bg-sky transition-colors text-lg shadow-lg shadow-teal/20"
+              className="inline-flex mt-5 sm:mt-0 m-auto items-center gap-2 justify-center bg-teal text-crust font-bold px-8 py-3 rounded-xl hover:bg-sky transition-colors text-lg shadow-lg shadow-teal/20"
             >
               Book with Lauren
               <IconArrowRight className="w-5 h-5" />
@@ -216,7 +216,7 @@ export default function TravelPage() {
               href="https://portkeyvacations.com/team/lauren-uchalik/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 justify-center bg-surface0 border border-surface1 text-teal font-semibold px-8 py-3 rounded-xl hover:border-teal transition-colors text-lg"
+              className="inline-flex mt-5 sm:mt-0 m-auto items-center gap-2 justify-center text-teal font-semibold px-8 py-3 rounded-xl border border-teal hover:bg-teal hover:text-crust transition-colors text-lg"
             >
               View Portkey Profile
               <IconArrowRight className="w-5 h-5" />
@@ -265,13 +265,13 @@ export default function TravelPage() {
               href="https://portkeyvacations.com/team/lauren-uchalik/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-surface0 border border-teal text-teal font-semibold px-6 py-2 rounded-lg hover:bg-teal hover:text-crust transition-colors"
+              className="inline-flex items-center gap-2 bg-surface0 border border-teal text-teal font-semibold px-8 py-3 rounded-xl hover:bg-teal hover:text-crust transition-colors"
             >
               Visit Lauren&apos;s Portkey Profile
               <IconArrowRight className="w-4 h-4" />
             </a>
           </div>
-          <div className="flex-1 bg-surface0 border border-surface1 rounded-2xl p-8 text-center">
+          <div className="flex-1 bg-surface0 border border-surface1 rounded-2xl p-8 text-left md:text-center">
             <h3 className="text-xl font-bold text-yellow mb-2">Ready to Start Planning?</h3>
             <p className="text-subtext1 text-sm mb-6">
               Fill out Lauren&apos;s travel inquiry form and she&apos;ll be in touch to start building your perfect itinerary.
@@ -280,7 +280,7 @@ export default function TravelPage() {
               href="https://app.tern.travel/public/forms/w_NEn_ZKXEve3Ricj8Z0VA/responses/new"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-teal text-crust font-bold px-8 py-3 rounded-xl hover:bg-sky transition-colors w-full"
+              className="inline-flex items-center justify-center gap-2 bg-teal text-crust font-bold px-8 py-3 rounded-xl hover:bg-sky transition-colors"
             >
               Start Your Inquiry
               <IconArrowRight className="w-5 h-5" />
@@ -310,7 +310,7 @@ export default function TravelPage() {
                   href={ep.apple}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-surface0 border border-surface1 text-text text-sm font-medium px-4 py-2 rounded-lg hover:border-peach hover:text-peach transition-colors"
+                  className="inline-flex items-center gap-2 bg-surface0 border border-surface1 text-text text-sm font-medium px-4 py-2 rounded-xl hover:border-[#ffffff] hover:text-[#ffffff] transition-colors"
                 >
                   <IconHeadphones className="w-4 h-4 shrink-0" />
                   Listen on Apple Podcasts
@@ -319,7 +319,7 @@ export default function TravelPage() {
                   href={ep.spotify}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-surface0 border border-surface1 text-text text-sm font-medium px-4 py-2 rounded-lg hover:border-green hover:text-green transition-colors"
+                  className="inline-flex items-center gap-2 bg-surface0 border border-surface1 text-text text-sm font-medium px-4 py-2 rounded-xl hover:border-green hover:text-green transition-colors"
                 >
                   <IconSpotify className="w-4 h-4 shrink-0" />
                   Listen on Spotify
@@ -333,8 +333,8 @@ export default function TravelPage() {
       {/* ── FINAL CTA ── */}
       <section className="max-w-4xl mx-auto px-6 pb-20">
         <div className="bg-gradient-to-br from-surface0 to-mantle border border-teal rounded-2xl p-10 text-center">
-          <h3 className="text-2xl font-bold text-teal mb-3">Let&apos;s Get You Somewhere Amazing</h3>
-          <p className="text-subtext1 mb-6">
+          <h3 className="text-xl sm:text-2xl font-bold text-teal mb-3">Let&apos;s Get You Somewhere Amazing</h3>
+          <p className="text-sm sm:text-[1rem] m-auto text-crust text-subtext1 mb-6 max-w-xl">
             No matter where you want to go, Lauren will help you get there stress-free, on budget,
             and with memories that last a lifetime.
           </p>

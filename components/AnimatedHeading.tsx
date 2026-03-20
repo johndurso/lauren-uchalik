@@ -30,10 +30,10 @@ export default function AnimatedHeading() {
   }, []);
 
   return (
-    <h1 className="text-5xl md:text-6xl font-extrabold text-text mb-6 leading-tight">
+    <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-text mb-3 leading-tight">
       Let&apos;s Plan Your{" "}
       <span
-        className="text-transparent bg-clip-text bg-gradient-to-r from-teal to-sky block p-5 transition-all duration-400 ease-in-out"
+        className="text-transparent text-4xl sm:text-5xl md:text-6xl bg-clip-text bg-gradient-to-r from-peach to-rosewater block p-5 transition-all duration-400 ease-in-out"
         style={{
           opacity: visible ? 1 : 0,
           transform: visible ? "translateY(0px)" : "translateY(-10px)",
